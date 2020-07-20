@@ -13,8 +13,8 @@ module.exports = {
     proxyTable: {
       '/monitor': {
         // target: 'http://192.168.0.45:8089',
-        target: 'http://192.168.0.174:8081',
-        // target: 'http://192.168.0.220:8081',
+        // target: 'http://192.168.0.174:8081',
+        target: 'http://192.168.0.220:8081',
         changeOrigin: true,
         pathRewrite: {
           '^/monitor': '/' // source : target
