@@ -75,6 +75,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 原因：安装image-webpack-loader插件出错，可以切换到淘宝源 使用cnpm安装；
 解决：1：先uninstall 本地的image-webpack-loader， 
 	  2：再npm install cnpm -g --registry=https://registry.npm.taobao.org
-	  3：cnpm install --save-dev  image-webpack-loader
+	  3：cnpm install --save-dev  image-webpack-loader  
 
   
