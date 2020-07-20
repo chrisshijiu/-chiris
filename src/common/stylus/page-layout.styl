@@ -1,0 +1,639 @@
+@import '~@/common/stylus/mixin.styl';
+
+.bg_icon  
+  width 26px
+  height 24px
+  position absolute
+  left 44px
+  top 14px
+  display inline-block
+  vertical-align middle
+.tower_icon
+  width 20px
+  height 20px
+  display inline-block
+  vertical-align text-bottom
+  background url('~@/common/images/tower_icon.png') no-repeat center/cover
+.set_icon
+  bg_icon('~@/common/images/set.png', 17px, 16px)
+.add_icon
+  bg_icon('~@/common/images/add.png', 16px, 13px)
+.change_icon
+  bg_icon('~@/common/images/change.png', 16px, 16px)
+.query_icon
+  bg_icon('~@/common/images/query.png', 18px, 15px)
+  vertical-align text-bottom
+// .photo_icon
+//   bg_icon('~@/common/images/photo.png', 18px, 15px)
+.delete_icon
+  bg_icon('~@/common/images/delete.png', 16px, 16px)
+.stop_icon
+  bg_icon('~@/common/images/stop.png', 16px, 16px)
+.start_icon
+  bg_icon('~@/common/images/start.png', 16px, 16px)
+.switch_icon
+  bg_icon('~@/common/images/switch.png', 16px, 16px)
+  vertical-align middle
+.wind_icon
+  bg_icon('~@/common/images/wind.png', 19px, 16px)
+  vertical-align sub
+.rain_icon
+  bg_icon('~@/common/images/rain.png', 18px, 16px)
+  vertical-align sub
+.date_icon
+  display inline-block
+  position absolute
+  top 5px
+  left 8px
+  background url('~@/common/images/date.png') no-repeat
+.datetime .date_icon
+  top 5px
+  left 1px
+.ok_icon
+  bg_icon('~@/common/images/ok.png', 16px, 16px)
+  background url('~@/common/images/ok.png') no-repeat center/cover
+.error_icon
+  bg_icon('~@/common/images/error.png', 16px, 16px)
+  background url('~@/common/images/error.png') no-repeat center/cover
+.good_icon
+  bg_icon('~@/common/images/good.png', 16px, 16px)
+  background url('~@/common/images/good.png') no-repeat center/cover
+.lose_icon
+  bg_icon('~@/common/images/lose.png', 16px, 16px)
+  background url('~@/common/images/lose.png') no-repeat center/cover
+.unavailable_icon
+  bg_icon('~@/common/images/unavailable.png', 16px, 16px)
+  background url('~@/common/images/unavailable.png') no-repeat center/cover
+.warn1_icon
+  bg_icon('~@/common/images/warn1.png', 16px, 16px)
+  background url('~@/common/images/warn1.png') no-repeat center/cover
+.warn2_icon
+  bg_icon('~@/common/images/warn2.png', 16px, 16px)
+  background url('~@/common/images/warn2.png') no-repeat center/cover
+.null_icon
+  bg_icon('~@/common/images/null.png', 176px, 128px)
+  display block
+  margin 5px auto
+.help_icon
+  bg_icon('~@/common/images/help.png', 16px, 16px)
+  background url('~@/common/images/help.png') no-repeat center/cover
+  margin-left 4px
+.main_help_icon
+  bg_icon('~@/common/images/main_help.png', 16px, 16px)
+  background url('~@/common/images/main_help.png') no-repeat center/cover
+  margin-left 4px
+.map_select_icon
+  bg_icon('~@/common/images/map-select.png', 30px, 30px)
+  background url('~@/common/images/map-select.png') no-repeat center/28px 25px
+.config_icon
+  bg_icon('~@/common/images/camera-config.png', 30px, 30px)
+  background url('~@/common/images/camera-config.png') no-repeat center/25px 23px
+.export_icon
+  bg_icon('~@/common/images/export.png', 16px, 16px)
+.create_icon
+  bg_icon('~@/common/images/create.png', 16px, 16px)
+.loading_icon
+  bg_icon('~@/common/images/loading.gif', 160px, 24px)
+.monitoring_icon
+  bg_icon('~@/common/images/monitoring.png', 16px, 16px)
+.full_icon
+  bg_icon('~@/common/images/full.png', 16px, 16px)
+// 个人中心的图标
+.editp_icon
+  bg_icon('~@/common/images/edit_person.png', 18px, 18px)
+  vertical-align text-top
+.changep_icon
+  bg_icon('~@/common/images/change_person.png', 19px, 19px)
+  vertical-align text-top
+.el-checkbox
+  display block!important
+  margin-left 0!important
+.side_tree
+  .el-checkbox
+    display inline!important
+
+.full_container  
+  height 100%
+  background-color #f0f7fe
+  .el-header
+    padding 8px 35px
+    background-color #fff
+.full_container>.el-container>.el-main
+    height calc(100% - 60px)
+    margin 15px 25px
+    padding 20px
+    box-shadow 0px 0px 6px #ededed
+    background-color #fff
+
+.el-container
+  height 100%
+  font-size 14px
+
+.el-header,.el-main,.el-footer
+  padding 0
+
+.el-main
+  height 100%
+
+.el-button--primary
+    background-color #1a6db6
+    border-color #1a6db6
+.el-button--primary.is-plain
+  color #1a6db6
+  background-color #fff
+  border-color #1a6db6
+
+.el-table th
+  background-color #DBEEFF
+
+.el-table__expanded-cell:hover
+  background-color #ffffff !important
+
+.table_wrapper .el-table th
+  background-color rgba(235,246,255,0.73)
+
+.table_wrapper>.el-table>.el-table__header-wrapper>table>thead>tr>th
+  display none
+
+.table_wrapper>.el-table>.el-table__body-wrapper>table>tbody>tr
+  background-color #DBEEFF!important
+
+.table_wrapper>.el-table>.el-table__body-wrapper>table>tbody>tr>td
+  text-align left!important
+
+.table_wrapper>.el-table>.el-table__body-wrapper>table>tbody>tr>td>.cell
+  font-size 16px!important
+  font-weight bold
+  font-family "MicrosoftYaHeiUI"
+  color #505050
+
+.el-table th,.el-table td
+  text-align center!important
+
+.el-table td
+  padding 5px 0
+.el-table__expanded-cell
+  padding 0!important
+.singleTableList
+  .el-table td
+    padding 12px 0
+  .el-table__empty-text
+    line-height 47px !important
+  .el-table__empty-block
+    min-height 47px !important
+    height 47px !important 
+
+// placeholder颜色的浏览器兼容问题
+::-webkit-input-placeholder /* WebKit browsers */
+  color #A9A9A9
+
+:-moz-placeholder /* Mozilla Firefox 4 to 18 */
+  color #A9A9A9
+  opacity 1
+
+::-moz-placeholder /* Mozilla Firefox 19+ */
+  color #A9A9A9
+  opacity 1
+
+:-ms-input-placeholder /* Internet Explorer 10+ */
+  color #A9A9A9
+
+.el-input__inner
+  height 32px!important
+  line-height 30px!important
+  width 100%!important
+
+.el-input__icon
+  line-height 30px!important
+.el-dialog__header
+  border-bottom 2px solid #1781dd
+.el-dialog__header .el-dialog__headerbtn .el-dialog__close
+  color #1781dd!important
+.el-dialog__title
+  color #1781dd!important
+  font-size 16px!important
+
+.el-dialog__body
+  padding 15px 80px 0 !important
+
+.map_dialog
+  .el-dialog__body
+    padding 0 0 10px !important
+.tangram-suggestion
+  z-index 9999
+
+.el-dialog__footer
+  padding 10px!important
+  text-align center!important
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+
+.el-dialog__body
+  .el-select-dropdown__item
+    line-height 17px !important
+
+.el-dialog
+  .el-form-item__label
+    line-height 40px !important
+
+.el-form-item__label
+  line-height 30px !important
+.monitor_data
+  .el-switch__label.is-active
+    color #1a6db6 !important
+  .el-form-item__label
+    padding 0 5px 0 0 !important
+    line-height 33px !important
+  .el-form--inline .el-form-item
+    margin-right 5px !important
+    margin-bottom 5px !important 
+  .el-input--suffix .el-input__inner
+    padding-right 0 !important
+  .dataGraph
+    .el-input__inner
+      padding-right 0 !important
+      padding-left 5px !important
+  .el-form-item.datetime
+    .el-input__inner
+      padding-left 33px !important
+.el-form-item__content
+  line-height 0 !important
+.timerange
+  .el-date-editor
+    width 380px !important
+.el-time-panel
+  left -48px !important
+
+.el-pagination .el-select .el-input .el-input__inner
+  padding-right 25px !important
+  border-radius 3px
+.el-menu--horizontal>.el-menu-item
+  height 71px
+  line-height 110px !important
+  margin 0 5px
+  padding 0 30px
+  color #ffffff!important
+.el-submenu
+  // margin 0 5px
+.el-menu--horizontal>.el-submenu .el-submenu__title
+  padding 0 30px
+  color #ffffff!important
+  height 71px
+  line-height 110px !important
+.el-menu--horizontal>.el-submenu .el-submenu__icon-arrow
+  display none
+
+.el-menu--popup-bottom-start
+  margin 0
+.el-menu--collapse .el-menu .el-submenu, .el-menu--popup
+  min-width 117px!important
+  text-align center
+  background-color #104B7F!important
+.el-menu--horizontal .el-menu .el-menu-item
+  color #fff!important
+.el-menu--horizontal .el-menu .el-menu-item.is-active
+  color #409EFF!important
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus
+  color #fff !important
+  background-color transparent !important
+.el-menu--horizontal .el-menu-item:not(.is-disabled):hover
+  color #409eff !important
+  background-color #fff !important
+.el-menu--horizontal 
+  .el-submenu .el-submenu__title, .el-submenu .el-submenu__title i
+    color #fff!important
+  .el-submenu.level.is-active .el-submenu__title
+    color #409eff !important
+  .el-submenu:hover .el-submenu__title
+    color #409eff !important
+    background-color #fff !important
+  .el-menu--popup-right-start
+    margin 0 !important
+  .el-submenu__icon-arrow
+    right 3px !important 
+    margin-top -5px !important
+  // display none
+.el-submenu .el-menu-item
+  min-width 104px !important
+.side_tree
+  .el-submenu
+    .el-menu-item
+      height 50px !important
+      span
+        height 56px !important
+    .el-submenu__title
+      height 48px !important
+      line-height 48px !important
+    .el-submenu__icon-arrow
+      margin-top -6px !important
+.el-button
+  margin-top 0 !important
+
+.el-pagination
+  padding 5px !important
+.total-status-wrapper
+  .el-pagination
+    padding 15px !important
+.el-pagination.is-background .el-pager li:not(.disabled).active
+  background-color #1a6db6!important
+
+
+.el-menu--horizontal>.el-submenu.current .el-submenu__title
+  background-color #fff!important
+  color #1a6db6!important
+  border none!important
+  .warning_icon
+    background url('~@/common/images/warning-current.png') no-repeat
+  .equipment_icon
+    background url('~@/common/images/device-current.png') no-repeat  
+  .user_icon
+    background url('~@/common/images/user-current.png') no-repeat
+    left 45px
+  
+
+.el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
+.el-menu--horizontal>.el-menu-item.is-active,.el-menu--horizontal>.el-submenu.is-active .el-submenu__title
+  border none!important
+
+.el-date-editor .el-range-separator
+  line-height 30px!important
+.warningData
+  .el-date-editor .el-range-separator
+    line-height 22px!important
+.pictures
+  .el-date-editor .el-range-separator
+    line-height 26px!important
+
+.el-range-editor .el-range-input
+  margin-left 26px!important
+
+.time-select-s-e
+  .el-range-separator
+    line-height 22px !important
+  .el-input__icon
+    line-height 24px !important
+  .el-range-input
+    margin-left 2px !important
+
+.el-date-range-picker
+  width 520px
+.el-date-range-picker__content
+  padding 0!important
+
+.el-button--text
+  color #505050
+.pictures
+  .el-button--text
+    color #b8b8b8 !important
+    span
+      font-size 12px !important
+  .el-timeline
+    .el-button--text
+      color #1a6db6 !important
+
+.el-scrollbar__wrap
+  margin-bottom -10px!important
+
+.el-select-dropdown__item
+  line-height 28px!important
+
+.el-form-item__error
+  position static !important
+  line-height 15px !important
+  padding 0 !important
+  color #ff0000
+
+input:-webkit-autofill
+  transition background-color 50000s ease-in-out 0s!important
+
+.confirm
+  .el-dialog__body
+    padding 30px 80px!important
+.pswp__bg
+  opacity 0.5!important
+
+.device_detail
+  .el-table
+    th
+      background-color #fff
+      font-size 14px
+      color #3aa2eb
+
+.btn-custom-cancel
+  float right
+  margin-left 10px
+  margin-right 120px
+
+.el-message-box__btns
+  text-align right!important
+  
+.el-aside
+  height 100%
+  float left
+  overflow hidden !important
+
+.ellipsis
+  white-space nowrap
+  text-overflow ellipsis
+  overflow hidden
+
+.BMap_bubble_title
+  padding-right 10px
+  text-overflow ellipsis
+
+// el-tree默认样式修改
+.el-tree-node__content>.el-tree-node__expand-icon
+  position absolute
+  right 10px
+  top 12px
+
+.el-tree-node__content
+  position relative
+  height 50px !important
+  padding 0 15px !important
+.el-tree-node__children
+  .el-tree-node__content
+    padding 0 36px !important
+
+.el-tree-node__expand-icon.expanded
+  -webkit-transform rotate(180deg)
+  transform rotate(180deg)
+
+.excel-export
+  .el-checkbox
+    position absolute
+    top 14px
+
+.el-tree-node__children
+  .ellipsis
+    left 55px !important
+
+// flex弹性布局的ie10+兼容(ie9不支持align-items)
+// align-items 对于父元素设置 min-hight 高度不能实现垂直居中
+// 设置为 height: 60px 就可以了
+.el-table__empty-block
+  height 60px !important
+.el-loading-spinner
+  i
+    color #000000 !important
+    font-size 30px
+.el-loading-text
+  color #606266 !important
+.excel-export
+  .el-loading-text
+    font-size 16px !important
+.clear:after
+  content ''
+  display block
+  clear both
+.grey
+  vertical-align top
+  color grey
+  font-size 12px
+
+.leavePage
+  .el-dialog
+    margin 0 auto
+    .el-dialog__header
+      border-bottom none
+      padding 15px 60px !important
+    .el-dialog__body
+      padding 0 60px !important
+.header
+  .el-dialog
+    height 35vw
+    margin 0 auto
+    .el-dialog__header
+      border-bottom none
+      padding 0 !important
+      .el-dialog__close
+        font-size 24px
+        font-weight bold
+        color #ffffff !important
+      .el-dialog__title
+        font-size 18px !important
+    .el-dialog__body
+      padding 0 !important
+      height 100%
+  .el-tabs__nav
+    width 100%
+    .el-tabs__item
+      width 20%
+      text-align center
+      a
+        color #000000
+    .el-tabs__item.is-active
+      a
+        color #409EFF
+.el-input-group__prepend
+  padding 0 10px !important
+
+.el-input-group__prepend
+  .el-button
+    vertical-align super
+
+
+.el-radio-group
+  margin-bottom 0 !important
+  .el-radio-button__inner
+    padding 8px 20px !important
+.warn-setting
+  border-bottom 2px solid #66b1ff
+  .el-form-item__label
+    color #409eff !important
+  
+.singleTableList
+  .el-table
+    .el-table__body-wrapper
+      td:nth-child(3),td:nth-child(4)
+        padding 0 !important
+        .cell
+          .el-table::before
+            height 0 !important
+          .el-table
+            .el-table__header-wrapper
+              display none !important
+            td
+              border none !important
+    .el-table__empty-text
+      color #c9cdd6
+  .el-table--enable-row-hover .el-table__body tr:hover>td
+    background-color #ffffff !important
+
+// pictures时间线样式修改
+.el-timeline-item__wrapper
+  padding-left 0 !important
+.el-timeline-item__tail
+  display none
+.el-timeline-item__node--normal
+  display none
+.el-timeline-item__timestamp
+  color #1A6DB6 !important
+  font-family MiscrosoftYaHeiUI
+  font-size 19px
+
+.el-divider--horizontal
+  margin 20px 0 0!important
+
+.el-timeline-item__content .collapse
+  width 100%
+  max-height 90px
+  overflow hidden
+.pictures-wrapper
+  .el-button--mini, .el-button--mini.is-round
+    padding 0 15px !important
+.side_tree
+  .el-button--mini
+    padding 6 15px !important
+
+// tooltip样式修改
+.el-tooltip__popper.is-dark
+  ::-webkit-scrollbar
+    background-color #303133 !important
+  ::-webkit-scrollbar-thumb
+    background-color #555 !important
+  
+  .content
+    max-height 115px
+    overflow-y scroll
+  span
+    display inline-block !important
+    width 85px !important
+    text-align center
+    text-overflow ellipsis
+    overflow hidden
+    white-space nowrap
+    vertical-align middle
+  .el-button
+    span
+      color #bcbcbc
+      font-size 12px !important
+
+// 时日期控件变小
+.datetime-point
+  top 0 !important
+  .el-date-picker__time-header
+    padding 2px 4px !important
+  .el-date-picker__header
+    margin 2px 12px !important
+  .el-date-table th, .el-date-table td div
+    padding 0px !important
+  .el-date-table td
+    padding 0 !important
+  .el-picker-panel__content
+    margin 0px 15px !important
+  .el-picker-panel__link-btn.el-button--text
+    display none !important
+  .el-picker-panel__footer
+    padding 2px 4px !important
+.datetime-point[x-placement^=bottom]
+  margin-top 0 !important
+
+// 实时视频页面路由切换的弹出框样式
+.video.el-message-box
+  position fixed
+  top 5px
+  left calc(50vw - 211px) !important

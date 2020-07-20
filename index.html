@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- 使访问配置摄像头时不带referer字段 -->
+    <meta name="referrer" content="never">
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <!-- 在线地图 -->
+    <script src="http://api.map.baidu.com/getscript?v=3.0&ak=VVhWKQn3rAlaaSPKVjX47sdx8kSoPrsw"></script>
+    <!-- 离线地图 -->
+    <!-- 加载BMap -->
+    <!-- <script type="text/javascript" src="/offline/map_load.js"></script> -->
+    
+    <!-- 视频监控三个必要的js文件引入 -->
+    <script src="static/video/jquery-1.12.4.min.js"></script>
+    <script src="static/video/jsencrypt.min.js"></script>            <!-- 用于RSA加密 -->
+    <script src="static/video/jsWebControl-1.0.0.min.js"></script>   <!-- 用于前端与插件交互 -->
+    
+
+    <!-- 引入配置文件 -->
+    <script src="/static/config.js"></script>
+    <title>监测预警平台</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

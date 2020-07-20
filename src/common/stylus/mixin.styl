@@ -1,0 +1,109 @@
+// css函数
+
+// 背景图片
+bg-image($url)
+  background-image: url($url)
+  background-repeat: no-repeat
+  background-position: center
+
+// 背景图片地址和大小
+bg-image-full($url)
+  background-image: url($url)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+bg-color-full($color)
+  background-color: $color
+  background-repeat: no-repeat
+  background-size: 100% 100%
+
+// 扩展点击区域
+extend-click()
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: -10px
+    left: -10px
+    right: -10px
+    bottom: -10px
+
+// 不换行
+no-wrap()
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// transform上下左右居中
+// vertical     垂直
+// horizontal   水平
+center-vh-tran()
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+// 绝对定位的居中
+center-vh-pos($width, $height)
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -($height / 2)
+  margin-left: -($width / 2)
+
+// 水平居中
+center-h()
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+// 垂直居中
+center-v()
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+//宽高
+wh($width, $height)
+  width: $width
+  height: $height
+
+// 字体大小、行高、字体
+// s: size
+// l: line
+font-sl($size, $line-height)
+  font-size: $size
+  line-height: $line-height
+
+//字体大小，颜色
+// c: color
+font-sc($size, $color)
+  font-size: $size
+  color: $color
+
+// flex 布局  待补充 TODO
+
+//flex 布局和 子元素 对其方式
+// = 后面是默认值
+fj($type = space-between)
+  display: flex
+  justify-content: $type
+
+// 个人中心个人信息的图标
+personMsg_icon($url)
+  display block
+  width 40px
+  height 40px
+  margin 0 auto
+  background url($url) no-repeat
+
+// 图标样式
+bg_icon($url, $width, $height)
+  display inline-block
+  vertical-align bottom
+  cursor pointer
+  width $width
+  height $height
+  background url($url) no-repeat
+
